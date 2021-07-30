@@ -1,0 +1,61 @@
+pawar@DESKTOP-O1H73O2 MINGW64 ~
+$ cd assign
+
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (master)
+$ git checkout -b css-assigns
+Switched to a new branch 'css-assigns'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git commit -m "css files commit"
+[css-assigns 19ae6f5] css files commit
+ 3 files changed, 18 insertions(+), 6 deletions(-)
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git add README.txt
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git commit -m "commit readme file in css-assign branch"
+[css-assigns 6589faf] commit readme file in css-assign branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git checkout master
+Switched to branch 'master'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (master)
+$ git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (master)
+$ git commit -m "commit readme file in master"
+[master 2d5b7f6] commit readme file in master
+ 2 files changed, 12 insertions(+), 1 deletion(-)
+ create mode 100644 css-assigns.css
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (master)
+$ git checkout css-assigns
+Switched to branch 'css-assigns'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git commit -m "commit change"
+[css-assigns 23af760] commit change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (css-assigns)
+$ git checkout master
+Switched to branch 'master'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (master)
+$ git merge css-assigns
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/assign (master|MERGING)
+$ git branch -D css-assigns
+Deleted branch css-assigns (was 23af760).
